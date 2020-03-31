@@ -4,16 +4,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CorreoComponent } from './Components/correo/correo.component';
-import { ListaCorreosComponent } from './Components/lista-correos/lista-correos.component';
-import { NuevoCorreoComponent } from './Components/nuevo-correo/nuevo-correo.component';
+import { HijoComponent } from './Components/hijo/hijo.component';
+import { PadreComponent } from './Components/padre/padre.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CorreoComponent,
-    ListaCorreosComponent,
-    NuevoCorreoComponent
+    HijoComponent,
+    PadreComponent
   ],
   imports: [
     BrowserModule,
