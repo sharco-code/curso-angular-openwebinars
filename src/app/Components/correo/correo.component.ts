@@ -11,15 +11,16 @@ export class CorreoComponent implements OnInit {
 
   constructor() { 
     this.correo = {
-      titulo: "titulo",
-      cuerpo: "curepo de email",
-      emisor: "emisor@email.com",
-      destinatario: "destinatario@email.com"
+      titulo: "Titulo del Email",
+      cuerpo: `Cuerpo del Email, Cuerpo del Email, Cuerpo del Email, Cuerpo del Email, Cuerpo del Email, Cuerpo del Email
+        Cuerpo del Email, Cuerpo del Email, Cuerpo del Email, Cuerpo del Email, Cuerpo del Email, Cuerpo del Email, Cuerpo del Email,
+        Cuerpo del Email, Cuerpo del Email, Cuerpo del Email, Cuerpo del Email, Cuerpo del Email, Cuerpo del Email, Cuerpo del Email`,
+      emisor: 'correoEmisor@openWebinar.inv',
+      destinatario: 'correoReceptor@openWebinar.inv'
     }
   }
 
-  ngOnInit(): void {
-
+  ngOnInit() {
   }
 
 }
