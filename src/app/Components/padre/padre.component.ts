@@ -9,6 +9,8 @@ export class PadreComponent implements OnInit {
 
   titulo:string="soyuntitulo";
 
+  variable:string = "";
+
   constructor() { }
 
   ngOnInit(): void {
@@ -16,6 +18,10 @@ export class PadreComponent implements OnInit {
 
   click() {
     this.titulo += "o";
+  }
+
+  recibir(param:string) {
+    this.variable = param;
   }
 
 }

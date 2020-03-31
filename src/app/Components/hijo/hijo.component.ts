@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter  } from '@angular/core';
 
 @Component({
   selector: 'app-hijo',
@@ -11,6 +11,9 @@ export class HijoComponent implements OnInit {
 
   @Input() titulo: string;
 
+  @Output() enviar: EventEmitter<string> = new EventEmitter();
+
+
   constructor() { }
 
   ngOnInit(): void {
@@ -18,6 +21,8 @@ export class HijoComponent implements OnInit {
 
   click() {
     this.variable += "o"
+
+    this.enviar.emit(this.variable);
   }
 
 }

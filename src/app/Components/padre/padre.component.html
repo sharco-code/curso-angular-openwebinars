@@ -1,4 +1,5 @@
 <h3>Componente padre</h3>
 <p>String propio: {{titulo}}</p>
 <button (click)="click()">Cambiar string</button>
-<app-hijo titulo="{{titulo}}"></app-hijo>
+<p>String del hijo: {{variable}}</p>
+<app-hijo titulo="{{titulo}}" (enviar)="recibir($event)"></app-hijo>
